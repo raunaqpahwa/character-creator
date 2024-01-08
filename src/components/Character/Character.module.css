@@ -1,4 +1,14 @@
 .character {
   /* Fill the available container height */
   height: 100%;
+  position: fixed;
+  top: 128px;
+  right: 0;
+}
+
+@media (max-width: 500px) {
+  .character {
+    max-width: 100%;
+    height: 100%;
+  }
 }

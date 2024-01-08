@@ -4,6 +4,9 @@
   padding-top: 18px;
   background-color: white;
   border-radius: 8px;
+  text-wrap: nowrap;
+  overflow: auto;
+  position: relative;
   /*
     HACK: Margin on an outer bound like this is
     a little gross, but we haven't seen the tools
@@ -12,10 +15,20 @@
   margin-bottom: 32px;
 }
 
+@media (max-width: 500px) {
+  .controlPane {
+    flex-basis: auto;
+    min-width: 90%;
+    overflow-x: auto;
+    margin-right: 24px;
+  }
+}
+
 .title {
   margin: 0;
   /* Optical centering */
   margin-bottom: -4px;
+  position: relative;
 }
 
 .metadata {
